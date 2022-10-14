@@ -1,0 +1,52 @@
+	    int first = 0;
+            try
+            {
+                Console.Write("Enter first number ");
+                first = int.Parse(Console.ReadLine());
+                Console.WriteLine("-------------");
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Enter the number");
+            }
+            int second = 0;
+            try
+            {
+                Console.Write("enter second number ");
+                second = int.Parse(Console.ReadLine());
+                Console.WriteLine("-------------");
+            }
+            catch (Exception)
+            {
+
+                Console.WriteLine("Enter the number");
+            }
+
+            Console.WriteLine("please choose one:");
+            Console.WriteLine("  +  -  *  /   ");
+            string math = Console.ReadLine();
+
+            switch (math)
+            {
+                case "+":
+                    Console.WriteLine($"{first} + {second} = {first + second}");
+                    break;
+
+                case "-":
+                    Console.WriteLine($"{first} - {second} = {first - second}");
+                    break;
+
+                case "*":
+                    Console.WriteLine($"{first} * {second} = {first * second}");
+                    break;
+
+                case "/":
+                    Console.WriteLine($"{first} / {second} = {first / second}");
+                    break;
+
+                    default:
+                    Console.WriteLine("incorrect operation");
+                    break;
+
+            }
